@@ -22,7 +22,7 @@ payload = {'snip': text, 'spash': 'none'}
 r = requests.post('https://www.writelatex.com/docs', data=payload)
 
 # Recieve response
-print r.url
+print 'Uploaded: %s' % r.url
 doc_id = r.url.split('/')[3]
 
 # Get address of PDF
